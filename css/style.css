@@ -272,7 +272,7 @@ h6 {
 
 .about__wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 117px;
 }
 
@@ -295,6 +295,8 @@ h6 {
     letter-spacing: 0.23em;
     color: #B7B7B7;
     margin-bottom: 48px;
+    width: 506px;
+    height: 180px;
 }
 
 .about__us__link {
@@ -303,11 +305,14 @@ h6 {
     text-transform: uppercase;
     color: #FFF;
     text-decoration: underline;
+    letter-spacing: 0.15em;
 }
+
 
 .about__img {
     width: 513px;
     height: 342px;
+    margin-top: 50px;
 }
 
 /*about end*/
