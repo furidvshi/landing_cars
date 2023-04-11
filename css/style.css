@@ -16,7 +16,6 @@ body {
     margin: 0 auto;
 
 }
-
 .btn {
     background-color: #DB2512;
     color: #fff;
@@ -263,7 +262,7 @@ h6 {
 
 /*our__services end*/
 /*about start*/
-.about__block {
+.about__bg {
     width: auto;
     height: 665px;
     background: #171616;
@@ -275,8 +274,6 @@ h6 {
     justify-content: space-between;
     padding-top: 117px;
 }
-
-.about__item {}
 
 .about__title {
     font-size: 30px;
@@ -316,3 +313,94 @@ h6 {
 }
 
 /*about end*/
+/*process start*/
+.process {
+    margin-top: 99px;
+}
+
+.process__title {
+    font-size: 148px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.process__subtitle {
+    margin-top: 58px;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.process__wrapper {
+    display: flex;
+    justify-content: space-between
+}
+
+.process__item {
+    margin-top: 92px;
+    width: 386px;
+    height: 150px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+}
+
+.process_item_title {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #000;
+    padding: 31px 93px 0px 30px;
+}
+
+.process_item_text {
+    font-weight: 400;
+    color: #B7B7B7;
+    padding: 15px 24px 26px 30px;
+}
+
+/*process end*/
+/*contacts start*/
+.contacts {
+    background-color: #171616;
+    width: auto;
+    height: 665px;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+.contacts__title{
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+.contacts__form{
+    max-width: 440px;
+}
+.form__row{
+    display: flex;
+    margin: 0 -20px;
+}
+.form__group{
+    flex: 1;
+    padding: 0 20px;
+
+}
+.input{
+    padding: 9px 0;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #FFF;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.label{
+    color: #fff;
+}
+/*contacts end*/
