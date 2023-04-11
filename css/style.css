@@ -388,6 +388,8 @@ h6 {
 .form__group{
     flex: 1;
     padding: 0 20px;
+    position: relative;
+    margin-bottom: 30px;
 
 }
 .input{
@@ -399,8 +401,23 @@ h6 {
     color: #fff;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+.input:focus + .label{
+    transform: translateY(-15px);
+    font-size: 12px;
+}
+.input:not(:placeholder-shown) + .label{
+    transform: translateY(-15px);
+    font-size: 12px;
 }
 .label{
     color: #fff;
+    letter-spacing: 0.15em;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    pointer-events: none;
+    transition: all 0.2s ease;
 }
 /*contacts end*/
