@@ -1,0 +1,313 @@
+/*Стиль для всех элементов, отступ от границ браузера*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/*Контент сайта по середине страницы*/
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.btn {
+    background-color: #DB2512;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 11px 48px;
+    transition: background-color 0.5s linear;
+}
+
+.btn:hover {
+    background-color: #8b170b;
+}
+
+.p {
+    margin: 0px 0px 5px;
+}
+
+/*header start*/
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/*align-items выравнивание по вертикали*/
+.header__wrapper {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__block {
+    width: 20%;
+
+}
+
+.header__block:last-child {
+    text-align: right;
+}
+
+.header__logo {
+    display: inline-block;
+}
+
+.logo__img {
+    height: 65px;
+}
+
+/* .class > * - означает применить стили ко всем элементам класса*/
+.nav {
+    display: flex;
+}
+
+.nav__links {
+    margin-right: 35px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+}
+
+/*отступ вправо у последнего элемента contacts 0*/
+.nav__links:last-child {
+    margin-right: 0;
+}
+
+.nav__links:after {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: '';
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.nav__links.active:after {
+    opacity: 1;
+}
+
+.nav__links:hover:after {
+    opacity: 1;
+}
+
+.header__lng {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__lng__link {
+    margin-right: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #B7B7B7;
+    text-decoration: none;
+}
+
+.header__lng__link:last-child {
+    margin-right: 0;
+}
+
+.header__lng__link.active {
+    color: #fff;
+}
+
+/*header end*/
+
+/*intro start*/
+.intro {
+    background-image: url(../img/bgintro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.intro__content {
+    height: 750px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.intro__block {}
+
+.intro__title {
+    max-width: 790px;
+    font-weight: 700;
+    font-size: 48px;
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+/*intro end*/
+/*info start*/
+.info {
+    transform: translateY(-50%);
+    /*Перенос блока INFO наверх*/
+
+}
+
+.info__wrapper {
+    display: flex;
+    margin: 0px -10px;
+}
+
+.info__block {
+    width: 33.33%;
+    padding: 0px 10px;
+}
+
+.info__item {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    padding: 40px 40px 25px;
+
+}
+
+.info__img {
+    margin-bottom: 20px;
+}
+
+.info__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0.15em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.info__text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #B7B7B7;
+    text-transform: uppercase;
+}
+
+/*info end*/
+/*our__services start*/
+.services {}
+
+.service__title {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: #000;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.services__link {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    color: #000;
+}
+
+.services_link:hover {
+    text-decoration: none;
+}
+
+.service__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.item__content {
+    width: 386px;
+    height: 500px;
+
+
+}
+
+.item__title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.23em;
+    margin-top: 21px;
+    text-transform: uppercase;
+}
+
+.diagnostic {}
+
+/*our__services end*/
+/*about start*/
+.about__block {
+    width: auto;
+    height: 665px;
+    background: #171616;
+    margin-top: 98px;
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 117px;
+}
+
+.about__item {}
+
+.about__title {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+    width: 490px;
+    height: 135px;
+    color: #fff;
+}
+
+.about__text {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.23em;
+    color: #B7B7B7;
+    margin-bottom: 48px;
+}
+
+.about__us__link {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.about__img {
+    width: 513px;
+    height: 342px;
+}
+
+/*about end*/
